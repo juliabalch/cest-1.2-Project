@@ -18,10 +18,12 @@ theme_set(theme_classic())
 AntTouch <- read_csv('cest1.2_anterior_touch_merged.csv') %>%
   mutate(plate = as.factor(plate))
 
+#vector to filter out dates with possible contamination
 dates_contaminated <- c("7/7/2021","7/8/2021","7/14/2021","7/15/2021")
+
 ```
 
-```{r general bodybend and tailtouch plots, fig.height=8, fig.width = 13}
+```{r general bodybend and tailtouch plots, fig.height=8, fig.width = 10}
 
 #bodybend boxplot, by date
 bodybendPlot <- AntTouch %>%
@@ -76,18 +78,18 @@ bodybendPlot2 <- AntTouch %>%
                fun = "mean", 
                width = 0.3, 
                position = position_dodge(width = .4)) +
-  ggbeeswarm::geom_quasirandom(aes(group = genotype),
-                               pch=1,
-                               width = .075,
-                               alpha = 0.6,
-                               dodge.width = .4) +
+ # ggbeeswarm::geom_quasirandom(aes(group = genotype),
+                              # pch=1,
+                              # width = .075,
+                              # alpha = 0.6,
+                              # dodge.width = .4) +
   stat_summary(geom = "errorbar", 
                fun.data = "mean_se", 
                width = 0.1, 
                position = position_dodge(width = .4)) +
   scale_color_brewer(palette = "Accent") +
   scale_fill_brewer(palette = "Accent") +
-   labs(title = "Body bends in anterior touch response",
+   labs(
  y = "number of body bends per reversal") +
   theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
@@ -103,7 +105,7 @@ tailtouchPlot2 <- AntTouch %>%
   ggplot(aes(x = genotype, fill = tail_touch)) +
   geom_bar(position = "fill",
            width = 0.75) +
-  labs(title = "Tail touch probability in cest-1.2",
+  labs(fill = "tail touch",
        y = "proportion of tail touch events") +
   scale_fill_brewer(palette = "Paired")
 
@@ -122,9 +124,16 @@ AntTouchSimplified <- AntTouch %>%
 
 t.test(bends ~ genotype, data = AntTouchSimplified)
 
+standard.error <- function(x) sd(x)/ sqrt(length(x))
+
+standard.error(AntTouchSimplified$bends[AntTouchSimplified$genotype == "N2"])
+
+standard.error(AntTouchSimplified$bends[AntTouchSimplified$genotype == "cest-1.2"])
+
 ```
 
-```{r tnaA experiment, fig.height=5, fig.width = 15}
+
+```{r tnaA experiment, fig.height=10, fig.width = 15}
 
 #tnaA bodybends plot by date
 tnaAbodybendPlot <- AntTouch %>%
@@ -132,7 +141,7 @@ tnaAbodybendPlot <- AntTouch %>%
          time_off_food != 30,
          !food %in% c("OP50", "JUb39", "tdcKO"),
          !date %in% dates_contaminated) %>%
-  ggplot(aes(x = food, fill = genotype, y = bends)) +
+  ggplot(aes(x = genotype, fill = food, y = bends)) +
   geom_boxplot() +
   ggbeeswarm::geom_quasirandom(aes(group = genotype),
                                width = .1,
@@ -162,18 +171,19 @@ tnaAbodybendPlot2 <- AntTouch %>%
                geom = "bar", 
                fun = "mean", 
                width = 0.5, 
-               position = position_dodge(width = .55)) +
+               position = position_dodge(width = .65)) +
   stat_summary(geom = "errorbar", 
                fun.data = "mean_se", 
                width = 0.1, 
-               position = position_dodge(width = .55)) +
+               position = position_dodge(width = .65)) +
   scale_color_brewer(palette = "Set2") +
   scale_fill_brewer(palette = "Set2") +
-   labs(title = "Body bends in anterior touch response",
+   labs(
  y = "number of body bends per reversal")
 
 
 (tnaAbodybendPlot | tnaAbodybendPlot2)
+
 
 ```
 ```{r basic stats for tnaA experiment}
@@ -186,7 +196,7 @@ AntTouch_BW <- AntTouch %>%
          !date %in% dates_contaminated) %>%
   select(genotype, bends)
 
-t.test(bends ~ genotype, data = AntTouchBW)
+t.test(bends ~ genotype, data = AntTouch_BW)
 
 AntTouch_tnaA <- AntTouch %>% 
   filter(is.na(note), 
@@ -197,6 +207,23 @@ AntTouch_tnaA <- AntTouch %>%
   select(genotype, bends)
 
 t.test(bends ~ genotype, data = AntTouch_tnaA)
+
+```
+
+```{r, STARS II figure, fig.height = 10, fig.width = 10}
+
+#png("stars.png", width = 500, height = 500)
+
+(tnaAbodybendPlot/tailtouchPlot2 | bodybendPlot2/tnaAbodybendPlot2)
+
+png("cest-1.2_bodybend_plot.png")
+(bodybendPlot2)
+
+png("cest-1.2_tailtouch_plot.png")
+(tailtouchPlot2)
+
+png("cest-1.2_tnaAexperiment_plot.png")
+(tnaAbodybendPlot2)
 
 ```
 

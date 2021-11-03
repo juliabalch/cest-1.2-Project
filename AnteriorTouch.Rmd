@@ -250,10 +250,12 @@ bayes_linmod <- AntTouch %>%
 
 ```
 ```{r TA experiment}
+dates_contaminated <- c("7/7/2021","7/8/2021","7/14/2021","7/15/2021")
+
 (TAbodybendPlot <- AntTouch %>%
   #filter(NumBends < 10) %>%
   filter(is.na(note), time_off_food != 30, food == "OP50", genotype != "daf-22",
-         !is.na(additive)) %>%
+         !is.na(additive), !date %in% dates_contaminated) %>%
   ggplot(aes(x = additive, fill = genotype, y = bends)) +
   geom_boxplot() +
   ggbeeswarm::geom_quasirandom(aes(group = genotype),
@@ -272,13 +274,33 @@ touch response",
  y = "number of body bends per reversal", x = "Plate additive")+ 
   facet_grid(.~ date))
 
+
+(TAbodybendPlotCombined <- AntTouch %>%
+  filter(is.na(note), time_off_food != 30, food == "OP50", genotype != "daf-22",
+         !is.na(additive), !date %in% dates_contaminated) %>%
+  ggplot(aes(x = genotype, fill = additive, y = bends)) +
+  stat_summary(aes(fill= additive),
+               geom = "bar", 
+               fun = "mean", 
+               width = 0.5, 
+               position = position_dodge(width = .65)) +
+  stat_summary(geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = .65)) +
+  scale_color_brewer(palette = "Accent") +
+  scale_fill_brewer(palette = "Accent") +
+   labs(
+ y = "number of body bends per reversal"))
+
+
 (TAtailtouchPlot <- 
   AntTouch %>%
     ungroup() %>%
     mutate(additive = case_when(
       is.na(additive) ~ 'none',
       TRUE ~ additive)) %>%
-  filter(is.na(note),  food == "OP50", additive != "H2O") %>%
+  filter(is.na(note),  food == "OP50", additive != "H2O", !date %in% dates_contaminated) %>%
   ggplot(aes(x = genotype, fill = tail_touch)) +
     # if you don't choose position = "fill", it will give you counts, not proportion
     geom_bar(position = "fill") +
@@ -286,6 +308,27 @@ touch response",
        y = "proportion of tail touch events") +
   facet_grid(.~additive) +
     scale_fill_brewer(palette = "Pastel2", direction = -1))
+
+
+(TAculturebodybendPlot <- AntTouch %>%
+  filter(is.na(note), time_off_food != 30, food == "OP50", genotype != "daf-22",
+         culture_conditons != "none") %>%
+  ggplot(aes(x = culture_conditons, fill = genotype, y = bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(group = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+  stat_summary(aes(color = genotype),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Accent") +
+  scale_fill_brewer(palette = "Accent") +
+   labs(title = "Body bends in anterior       
+touch response",
+ y = "number of body bends per reversal", x = "culture plate additive"))
 
 (TAbodybendPlot | TAtailtouchPlot)
 ```
@@ -313,13 +356,12 @@ touch response",
 (tnaAtailtouchPlot <- 
   AntTouch %>%
     ungroup() %>%
-  filter(is.na(note), food != "OP50") %>%
+  filter(is.na(note), time_off_food != 30, food != "OP50", food != "tdcKO", food != "JUb39") %>%
   ggplot(aes(x = genotype, fill = tail_touch)) +
-    # if you don't choose position = "fill", it will give you counts, not proportion
     geom_bar(position = "fill") +
   labs(title = "Tail touch probability in cest-1.2",
        y = "proportion of tail touch events") +
-  facet_grid(date ~food) +
+  facet_grid(. ~ food) +
     scale_fill_brewer(palette = "Pastel2", direction = -1))
 
 (tnaAbodybendPlot | tnaAtailtouchPlot)
@@ -337,7 +379,7 @@ touch response",
 
 ```{r, JUb experiment}
 (JUbbodybendPlot <- AntTouch %>%
-  filter(is.na(note), time_off_food != 30, date == "2021-08-11") %>%
+  filter(is.na(note), time_off_food != 30, date == "8/11/2021") %>%
   ggplot(aes(x = food, fill = genotype, y = bends)) +
   geom_boxplot() +
   ggbeeswarm::geom_quasirandom(aes(group = genotype),
@@ -357,7 +399,7 @@ touch response",
 (JUbtailtouchPlot <- 
   AntTouch %>%
     ungroup() %>%
-  filter(is.na(note), date == "2021-08-11") %>%
+  filter(is.na(note), date == "8/11/2021") %>%
   ggplot(aes(x = genotype, fill = tail_touch)) +
     geom_bar(position = "fill") +
   labs(title = "Tail touch probability in cest-1.2",
