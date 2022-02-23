@@ -1,0 +1,76 @@
+---
+title: "Indole_Supplementation"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggbeeswarm)
+library(kableExtra)
+library(magrittr)
+theme_set(theme_classic())
+```
+
+```{r data load, message=FALSE}
+AntTouch <- read_csv('cest1.2_anterior_touch_merged.csv') %>%
+  mutate(plate = as.factor(plate))
+```
+
+
+```{r}
+(Indole_bodybendPlot <- AntTouch %>%
+  filter(is.na(note), food == "OP50",
+          date == "11/10/2021") %>%
+  ggplot(aes(x = additive, fill = genotype, y = bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(group = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+  stat_summary(aes(color = genotype),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Accent") +
+  scale_fill_brewer(palette = "Accent") +
+   labs(title = "Body bends in anterior       
+touch response",
+ y = "number of body bends per reversal", x = "additive"))
+
+
+(Indole_bodybendPlotCombined <- AntTouch %>%
+  filter(is.na(note), food == "OP50", date == "11/12/2021") %>%
+  ggplot(aes(x = genotype, fill = culture_conditons, y = bends)) +
+  stat_summary(aes(fill=culture_conditons),
+               geom = "bar", 
+               fun = "mean", 
+               width = 0.5, 
+               position = position_dodge(width = .65)) +
+  stat_summary(geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = .65)) +
+  scale_color_brewer(palette = "Accent") +
+  scale_fill_brewer(palette = "Accent") +
+   labs(
+ y = "number of body bends per reversal"))
+
+
+(Indole_tailtouchPlot <- 
+  AntTouch %>%
+    ungroup() %>%
+    mutate(additive = case_when(
+      is.na(additive) ~ 'none',
+      TRUE ~ additive)) %>%
+  filter(is.na(note),  food == "OP50", additive != "H2O", date == "11/12/2021") %>%
+  ggplot(aes(x = genotype, fill = tail_touch)) +
+    # if you don't choose position = "fill", it will give you counts, not proportion
+    geom_bar(position = "fill") +
+  labs(title = "Tail touch probability in cest-1.2",
+       y = "proportion of tail touch events") +
+  facet_grid(.~additive) +
+    scale_fill_brewer(palette = "Pastel2", direction = -1))
+```

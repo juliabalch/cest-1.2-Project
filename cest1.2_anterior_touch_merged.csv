@@ -1511,81 +1511,437 @@ JB,cest-1.2,5,3,,Y,OP50,EtOH,,11/4/2021,152,,none
 JB,cest-1.2,5,4,,Y,OP50,EtOH,,11/4/2021,152,,none
 JB,cest-1.2,5,4,,Y,OP50,EtOH,,11/4/2021,152,,none
 JB,cest-1.2,5,3,,Y,OP50,EtOH,,11/4/2021,152,,none
-JB,N2,5,2,,N,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,8,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,1,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,3,,N,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,153,,Indole_0.5
-JB,N2,5,1,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,5,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,1,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,2,,N,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,1,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,2,,N,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,1,,Y,OP50,Indole_0.5,,11/10/2021,154,,Indole_0.5
-JB,N2,5,1,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,1,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,4,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,3,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,1,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,1,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,3,,Y,OP50,EtOH,,11/10/2021,155,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,1,,N,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,4,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,3,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,2,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,N2,5,5,,Y,OP50,EtOH,,11/10/2021,156,,EtOH
-JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,5,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,157,,Indole_0.5
-JB,cest-1.2,5,1,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,2,,N,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,,11/10/2021,158,,Indole_0.5
-JB,cest-1.2,5,3,,N,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,2,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,5,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,2,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,5,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,1,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,3,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,6,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,3,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,4,,Y,OP50,EtOH,,11/10/2021,159,,EtOH
-JB,cest-1.2,5,4,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,2,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,3,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,4,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,4,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,2,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,4,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,5,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,5,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
-JB,cest-1.2,5,3,,Y,OP50,EtOH,,11/10/2021,160,,EtOH
+JB,N2,5,2,,N,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,8,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,1,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,3,,N,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,153,,Indole_0.5
+JB,N2,5,1,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,5,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,1,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,2,,N,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,1,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,2,,N,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,1,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,154,,Indole_0.5
+JB,N2,5,1,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,1,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,4,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,3,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,1,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,1,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,3,,Y,OP50,EtOH,octanol fumes,11/10/2021,155,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,1,,N,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,4,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,3,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,N2,5,5,,Y,OP50,EtOH,octanol fumes,11/10/2021,156,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,5,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,157,,Indole_0.5
+JB,cest-1.2,5,1,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,2,,N,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,3,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,Indole_0.5,octanol fumes,11/10/2021,158,,Indole_0.5
+JB,cest-1.2,5,3,,N,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,5,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,5,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,1,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,6,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,4,,Y,OP50,EtOH,octanol fumes,11/10/2021,159,,EtOH
+JB,cest-1.2,5,4,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,4,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,4,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,4,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,5,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,5,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,EtOH,octanol fumes,11/10/2021,160,,EtOH
+JB,N2,5,3,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,1,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,3,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,4,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,3,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,4,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,1,,Y,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,3,,N,OP50,,,11/12/2021,161,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,N,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,N,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,3,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,162,,EtOH
+JB,N2,5,2,,Y,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,2,,Y,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,2,,Y,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,3,,Y,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,2,,N,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,3,,N,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,2,,N,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,2,,Y,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,6,,Y,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,4,,Y,OP50,,,11/12/2021,163,,Indole_0.5
+JB,N2,5,2,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,2,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,1,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,3,,N,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,3,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,2,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,2,,N,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,4,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,3,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,N2,5,2,,Y,OP50,,,11/12/2021,164,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,4,,N,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,3,,N,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,2,,N,OP50,,,11/12/2021,165,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,4,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,2,,N,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,4,,Y,OP50,,,11/12/2021,166,,EtOH
+JB,cest-1.2,5,1,,Y,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,2,,N,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,2,,N,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,3,,N,OP50,,,11/12/2021,167,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,2,,N,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,4,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,2,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,3,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,cest-1.2,5,5,,Y,OP50,,,11/12/2021,168,,Indole_0.5
+JB,lgc-55,5,6,,N,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,1,,N,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,4,,N,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,5,,Y,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,1,,Y,OP50,,,12/7/2021,169,,none
+JB,lgc-55,5,4,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,2,,N,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,4,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,1,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/7/2021,170,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/7/2021,170,,none
+JB,cest-1.2,5,1,,Y,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,4,,N,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,3,,Y,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,3,,Y,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,2,,N,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,6,,Y,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,3,,N,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,3,,Y,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,2,,N,OP50,,,12/7/2021,171,,none
+JB,cest-1.2,5,4,,Y,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,7,,Y,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,1,,Y,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,6,,N,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,4,,N,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,2,,N,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,4,,Y,OP50,,,12/7/2021,172,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/7/2021,172,,none
+JB,N2,5,8,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,6,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,4,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,3,,N,OP50,,,12/7/2021,173,,none
+JB,N2,5,5,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,9,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,4,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,4,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,2,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,3,,Y,OP50,,,12/7/2021,173,,none
+JB,N2,5,2,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,6,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,5,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,7,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,2,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,2,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,2,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,7,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,3,,Y,OP50,,,12/7/2021,174,,none
+JB,N2,5,3,,Y,OP50,,,12/7/2021,174,,none
+JB,lgc-55,5,4,,Y,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,2,,N,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,3,,N,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,1,,Y,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,4,,Y,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,1,,Y,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,2,,N,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/14/2021,175,,none
+JB,lgc-55,5,10,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,1,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,4,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,3,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,5,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/14/2021,176,,none
+JB,lgc-55,5,2,,Y,OP50,,,12/14/2021,176,,none
+JB,cest-1.2,5,6,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,7,,N,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,5,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,4,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,5,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,1,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,5,,N,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,3,,Y,OP50,,,12/14/2021,177,,none
+JB,cest-1.2,5,3,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,4,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,4,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,6,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,2,,N,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,2,,Y,OP50,,,12/14/2021,178,,none
+JB,cest-1.2,5,4,,Y,OP50,,,12/14/2021,178,,none
+JB,N2,5,4,,Y,OP50,,,12/14/2021,179,,none
+JB,N2,5,6,,Y,OP50,,,12/14/2021,179,,none
+JB,N2,5,5,,Y,OP50,,,12/14/2021,179,,none
+JB,N2,5,6,,Y,OP50,,,12/14/2021,179,,none
+JB,N2,5,2,,Y,OP50,,,12/14/2021,179,,none
+JB,N2,5,3,,Y,OP50,,,12/14/2021,179,,none
+JB,N2,5,3,,N,OP50,,,12/14/2021,179,,none
+JB,N2,5,2,,Y,OP50,,,12/14/2021,179,,none
+JB,N2,5,3,,N,OP50,,,12/14/2021,179,,none
+JB,N2,5,4,,N,OP50,,,12/14/2021,179,,none
+JB,N2,5,3,,N,OP50,,,12/14/2021,180,,none
+JB,N2,5,6,,N,OP50,,,12/14/2021,180,,none
+JB,N2,5,2,,Y,OP50,,,12/14/2021,180,,none
+JB,N2,5,2,,Y,OP50,,,12/14/2021,180,,none
+JB,N2,5,3,,Y,OP50,,,12/14/2021,180,,none
+JB,N2,5,1,,Y,OP50,,,12/14/2021,180,,none
+JB,N2,5,1,,Y,OP50,,,12/14/2021,180,,none
+JB,N2,5,3,,Y,OP50,,,12/14/2021,180,,none
+JB,N2,5,3,,Y,OP50,,,12/14/2021,180,,none
+JB,tdc-1,5,2,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,1,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,2,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,3,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,2,,N,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,3,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,3,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,4,,N,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,2,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,2,,Y,OP50,,,1/31/2022,181,,none
+JB,tdc-1,5,3,,Y,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,3,,Y,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,4,,Y,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,2,,N,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,4,,Y,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,2,,N,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,2,,Y,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,2,,N,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,3,,Y,OP50,,,1/31/2022,182,,none
+JB,tdc-1,5,2,,Y,OP50,,,1/31/2022,182,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,4,,Y,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,2,,N,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,5,,Y,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,2,,N,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,3,,N,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,2,,N,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,2,,N,OP50,,,1/31/2022,183,,none
+JB,cest-1.2;tdc-1,5,5,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,3,,N,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,1,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,1/31/2022,184,,none
+JB,cest-1.2;tdc-1,5,3,,N,OP50,,,1/31/2022,184,,none
+JB,N2,5,3,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,6,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,4,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,1,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,5,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,6,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,5,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,4,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,2,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,6,,Y,OP50,,,1/31/2022,185,,none
+JB,N2,5,1,,N,OP50,,,1/31/2022,186,,none
+JB,N2,5,4,,Y,OP50,,,1/31/2022,186,,none
+JB,N2,5,4,,Y,OP50,,,1/31/2022,186,,none
+JB,N2,5,3,,Y,OP50,,,1/31/2022,186,,none
+JB,N2,5,5,,Y,OP50,,,1/31/2022,186,,none
+JB,N2,5,6,,N,OP50,,,1/31/2022,186,,none
+JB,N2,5,2,,Y,OP50,,,1/31/2022,186,,none
+JB,N2,5,5,,Y,OP50,,,1/31/2022,186,,none
+JB,N2,5,4,,Y,OP50,,,1/31/2022,186,,none
+JB,N2,5,4,,Y,OP50,,,1/31/2022,186,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,2,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,1,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,1,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,6,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,4,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,2,,Y,OP50,,,1/31/2022,187,,none
+JB,cest-1.2,5,1,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,4,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,4,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,4,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,2,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,3,,Y,OP50,,,1/31/2022,188,,none
+JB,cest-1.2,5,4,,Y,OP50,,,1/31/2022,188,,none
+JB,N2,5,4,,N,OP50,,,2/4/2022,189,,none
+JB,N2,5,5,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,4,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,3,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,3,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,2,,N,OP50,,,2/4/2022,189,,none
+JB,N2,5,3,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,7,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,2,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,4,,Y,OP50,,,2/4/2022,189,,none
+JB,N2,5,4,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,4,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,1,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,3,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,2,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,4,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,4,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,4,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,6,,Y,OP50,,,2/4/2022,190,,none
+JB,N2,5,3,,Y,OP50,,,2/4/2022,190,,none
+JB,cest-1.2,5,6,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,2,,N,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,4,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,2,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,5,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,2,,Y,OP50,,,2/4/2022,191,,none
+JB,cest-1.2,5,4,,Y,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,5,,Y,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,5,,Y,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,3,,N,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,5,,Y,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,192,,none
+JB,cest-1.2,5,3,,Y,OP50,,,2/4/2022,192,,none
+JB,tdc-1,5,4,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,3,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,3,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,5,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,3,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,1,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,1,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,1,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,4,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,2,,Y,OP50,,,2/4/2022,193,,none
+JB,tdc-1,5,4,,Y,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,2,,Y,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,3,,N,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,2,,Y,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,3,,N,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,2,,Y,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,1,,N,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,2,,Y,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,2,,Y,OP50,,,2/4/2022,194,,none
+JB,tdc-1,5,3,,Y,OP50,,,2/4/2022,194,,none
+JB,cest-1.2;tdc-1,5,2,,N,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,2,,N,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,6,,Y,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,1,,Y,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,3,,N,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,1,,Y,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,2/4/2022,195,,none
+JB,cest-1.2;tdc-1,5,2,,N,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,4,,Y,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,3,,Y,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,3,,N,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,1,,N,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,2/4/2022,196,,none
+JB,cest-1.2;tdc-1,5,2,,Y,OP50,,,2/4/2022,196,,none
