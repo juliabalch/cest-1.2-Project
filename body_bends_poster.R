@@ -9,9 +9,8 @@ library(viridis)
 theme_set(theme_classic())
 
 
-AntTouch <- read.csv('cest1.2_anterior_touch_merged.csv') %>%
+AntTouch <- read_csv('cest1.2_anterior_touch_merged.csv') %>%
   mutate(plate = as.factor(plate))
-tibble(AntTouch)
 
 dates_contaminated <- c("7/7/2021","7/8/2021","7/14/2021","7/15/2021", "12/7/2021")
 
