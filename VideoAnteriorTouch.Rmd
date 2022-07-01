@@ -1,0 +1,98 @@
+---
+title: "VideoAnteriorTouch"
+author: "Julia Balch"
+date: '2022-06-30'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggbeeswarm)
+library(kableExtra)
+library(magrittr)
+theme_set(theme_classic())
+```
+
+```{r data load, message=FALSE}
+AntTouch <- read_csv('Video_Anterior_Touch.csv') %>%
+mutate(plate = as.factor(plate))
+```
+
+```{r distance}
+
+(distancePlot <- AntTouch %>%
+  ggplot(aes(x = genotype,fill=genotype, y = length_mm)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of escape response reversal (distance)",
+ y = "distance (mm)", x = "genotype")+ 
+  facet_grid(. ~ plate))
+
+```
+```{r speed}
+
+(speedPlot <- AntTouch %>%
+  ggplot(aes(x = genotype,fill=genotype, y = `speed_mm/sec`)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "speed of escape response reversal",
+ y = "speed (mm/sec)", x = "genotype")+ 
+  facet_grid(. ~ plate))
+```
+```{r time}
+(speedPlot <- AntTouch %>%
+  ggplot(aes(x = genotype,fill=genotype, y = time_sec)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of escape response reversal (time)",
+ y = "time (sec)", x = "genotype")+ 
+  facet_grid(. ~ plate))
+```
+

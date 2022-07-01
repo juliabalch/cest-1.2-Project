@@ -253,26 +253,29 @@ bayes_linmod <- AntTouch %>%
 dates_contaminated <- c("7/7/2021","7/8/2021","7/14/2021","7/15/2021")
 
 (TAbodybendPlot <- AntTouch %>%
-  #filter(NumBends < 10) %>%
-  filter(is.na(note), time_off_food != 30, food == "OP50", genotype != "daf-22",
-         !is.na(additive), !date %in% dates_contaminated) %>%
-  ggplot(aes(x = additive, fill = genotype, y = bends)) +
+  filter(date == c("6/28/2022")) %>%
+  ggplot(aes(x = genotype,fill=genotype, y = bends)) +
   geom_boxplot() +
-  ggbeeswarm::geom_quasirandom(aes(group = genotype),
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
                                width = .1,
                                alpha = 0.3,
                                dodge.width = .75) +
-  stat_summary(aes(color = genotype),
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
                geom = "errorbar", 
                fun.data = "mean_se", 
                width = 0.1, 
                position = position_dodge(width = 1.6)) +
-  scale_color_brewer(palette = "Accent") +
-  scale_fill_brewer(palette = "Accent") +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
    labs(title = "Body bends in anterior       
 touch response",
- y = "number of body bends per reversal", x = "Plate additive")+ 
-  facet_grid(.~ date))
+ y = "number of body bends per reversal", x = "genotype")+ 
+  facet_grid(date ~ additive))
 
 
 (TAbodybendPlotCombined <- AntTouch %>%
@@ -499,7 +502,7 @@ touch response",
 ```{r time}
 
 (bodybendPlot <- AntTouch %>%
-  filter(date == c("6/10/2022"), time_off_food != "60") %>%
+  filter(date == c("6/15/2022"), time_off_food != "60") %>%
   ggplot(aes(x = genotype,fill=genotype, y = bends)) +
   geom_boxplot() +
   ggbeeswarm::geom_quasirandom(aes(fill = genotype),
