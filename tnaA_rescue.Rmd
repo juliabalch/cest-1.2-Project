@@ -1,0 +1,47 @@
+---
+title: "Untitled"
+author: "Julia Balch"
+date: '2022-07-15'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggbeeswarm)
+library(kableExtra)
+library(magrittr)
+theme_set(theme_classic())
+```
+
+```{r data load, message=FALSE}
+AntTouch <- read_csv('tnaA_rescue_data.csv') %>%
+mutate(plate = as.factor(plate))
+```
+
+```{r distance}
+
+(Plot <- AntTouch %>%
+  ggplot(aes(x = genotype,fill=genotype, y = bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of reversal",
+ y = "bends", x = "genotype") +
+   facet_grid(. ~ condition))
+```

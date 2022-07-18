@@ -20,9 +20,10 @@ AntTouch <- read_csv('Video_Anterior_Touch.csv') %>%
 mutate(plate = as.factor(plate))
 ```
 
-```{r distance}
+```{r distance, fig.height= 4, fig.width= 10}
 
 (distancePlot <- AntTouch %>%
+  filter(date == "6/30/2022", plate == c("3", "4")) %>%
   ggplot(aes(x = genotype,fill=genotype, y = length_mm)) +
   geom_boxplot() +
   ggbeeswarm::geom_quasirandom(aes(fill = genotype),
@@ -41,14 +42,231 @@ mutate(plate = as.factor(plate))
                position = position_dodge(width = 1.6)) +
   scale_color_brewer(palette = "Set1") +
   scale_fill_brewer(palette = "Set1") +
-   labs(title = "length of escape response reversal (distance)",
- y = "distance (mm)", x = "genotype")+ 
-  facet_grid(. ~ plate))
+   labs(title = "length of reversal (distance)",
+ y = "distance (mm)", x = "genotype")) |
+  
+  (bendsPlot <- AntTouch %>%
+      filter(date == "6/30/2022", plate == c("3", "4")) %>%
+  ggplot(aes(x = genotype,fill=genotype, y = manual_bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of reversal (# bends)",
+ y = "bends", x = "genotype"))  |
+  
+  (bendslengthPlot <- AntTouch %>%
+     filter(date == "6/30/2022", plate == c("3", "4")) %>%
+  ggplot(aes(x = genotype,fill=genotype, y = mm_per_bend)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of one bend",
+ y = "mm per bend", x = "genotype")) 
+
+
+
+
+
+(distancePlot2 <- AntTouch %>%
+  filter(date == "7/8/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = length_mm)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of reversal (distance)",
+ y = "distance (mm)", x = "genotype")) |
+  
+  (bendsPlot2 <- AntTouch %>%
+     filter(date == "7/8/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = manual_bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of reversal (# bends)",
+ y = "bends", x = "genotype"))  |
+  
+  (bendslengthPlot2 <- AntTouch %>%
+     filter(date == "7/8/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = mm_per_bend)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of one bend",
+ y = "mm per bend", x = "genotype")) 
+
+
+
+
+(distancePlot3 <- AntTouch %>%
+  filter(date == "7/12/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = length_mm)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of reversal (distance)",
+ y = "distance (mm)", x = "genotype")) |
+  
+  (bendsPlot3 <- AntTouch %>%
+     filter(date == "7/12/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = manual_bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of reversal (# bends)",
+ y = "bends", x = "genotype"))|
+  
+  (bendslengthPlot3 <- AntTouch %>%
+     filter(date == "7/12/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = mm_per_bend)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of one bend",
+ y = "mm per bend", x = "genotype")) 
+
+
+
+ (justBendsPlot <- AntTouch %>%
+     filter(date == "7/12/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = manual_bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of reversal (#bends)",
+ y = "bends", x = "genotype"))
+
 
 ```
 ```{r speed}
 
 (speedPlot <- AntTouch %>%
+   filter(date == "6/30/2022", is.na(note)) %>%
   ggplot(aes(x = genotype,fill=genotype, y = `speed_mm/sec`)) +
   geom_boxplot() +
   ggbeeswarm::geom_quasirandom(aes(fill = genotype),
@@ -68,11 +286,82 @@ mutate(plate = as.factor(plate))
   scale_color_brewer(palette = "Set1") +
   scale_fill_brewer(palette = "Set1") +
    labs(title = "speed of escape response reversal",
- y = "speed (mm/sec)", x = "genotype")+ 
-  facet_grid(. ~ plate))
+ y = "speed (mm/sec)", x = "genotype"))
+
+(speedPlot2 <- AntTouch %>%
+   filter(date == "7/8/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = `speed_mm/sec`)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "speed of escape response reversal",
+ y = "speed (mm/sec)", x = "genotype"))
+
+(speedPlot3 <- AntTouch %>%
+   filter(date == "7/12/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = `speed_mm/sec`)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "speed of escape response reversal",
+ y = "speed (mm/sec)", x = "genotype"))
+
+
+(speedPlotAll <- AntTouch %>%
+   filter(is.na(note)) %>%
+  ggplot(aes(x = genotype,fill=genotype, y = `speed_mm/sec`)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+    theme(axis.text.x = element_text(angle = 40, hjust = 1)) +
+   labs(title = "speed of escape response reversal",
+ y = "speed (mm/sec)", x = "genotype"))
 ```
 ```{r time}
-(speedPlot <- AntTouch %>%
+(speedPlot1 <- AntTouch %>%
+   filter(date == "6/30/2022", is.na(note)) %>%
   ggplot(aes(x = genotype,fill=genotype, y = time_sec)) +
   geom_boxplot() +
   ggbeeswarm::geom_quasirandom(aes(fill = genotype),
@@ -92,7 +381,82 @@ mutate(plate = as.factor(plate))
   scale_color_brewer(palette = "Set1") +
   scale_fill_brewer(palette = "Set1") +
    labs(title = "length of escape response reversal (time)",
- y = "time (sec)", x = "genotype")+ 
-  facet_grid(. ~ plate))
+ y = "time (sec)", x = "genotype"))
+
+
+
+(speedPlot2 <- AntTouch %>%
+   filter(date == "7/8/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = time_sec)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of escape response reversal (time)",
+ y = "time (sec)", x = "genotype")) 
+
+
+
+(speedPlot3 <- AntTouch %>%
+   filter(date == "7/12/2022") %>%
+  ggplot(aes(x = genotype,fill=genotype, y = time_sec)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "length of escape response reversal (time)",
+ y = "time (sec)", x = "genotype")) 
+
+
+
+(speedPlotAll <- AntTouch %>%
+   filter(is.na(note)) %>%
+  ggplot(aes(x = genotype,fill=genotype, y = time_sec)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean",
+               width = 0.3,
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se",
+               width = 0.1,
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+    theme(axis.text.x = element_text(angle = 40, hjust = 1)) +
+   labs(title = "length of escape response reversal (time)", y = "time (sec)", x = "genotype"))
+
 ```
 

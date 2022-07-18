@@ -1,0 +1,74 @@
+---
+title: "TierpsyAnalysis"
+author: "Julia Balch"
+date: '2022-07-13'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggbeeswarm)
+library(kableExtra)
+library(magrittr)
+theme_set(theme_classic())
+```
+
+```{r data load, message=FALSE}
+features <- read_csv('features_summary_tierpsy_.csv')
+```
+
+```{r curvature plot}
+
+(curvaturePlot <- features %>%
+   ggplot(aes(x = genotype,fill=genotype, y = curvature_mean_hips_norm_abs_90th)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "mean hips curvature during reversal",
+ y = "curvature (normalized to body length, 90th percentile, absolute value, units???)",
+ x = "genotype"))
+```
+```{r speed plot}
+
+(speedPlot <- features %>%
+   ggplot(aes(x = genotype,fill=genotype, y = speed_head_tip_w_backward_90th)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "speed of head during reversal",
+ y = "speed (90th percentile, units???)",
+ x = "genotype"))
+
+
+```
+
