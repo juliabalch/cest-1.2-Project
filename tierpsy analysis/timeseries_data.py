@@ -1,7 +1,9 @@
 import pandas as pd
 from tierpsytools.read_data import get_timeseries
 
+
 rootDir = r'C:\Users\julia\OneDrive\Desktop\Projects\cest-1.2-Project\tierpsy analysis\hdf5_files'
+
 
 filenames, data = get_timeseries.get_timeseries(rootDir)
 

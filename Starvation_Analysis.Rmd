@@ -1,0 +1,43 @@
+---
+title: "Starvation"
+author: "Julia Balch"
+date: '2022-09-26'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggbeeswarm)
+library(kableExtra)
+library(magrittr)
+theme_set(theme_classic())
+```
+
+```{r data load, message=FALSE}
+df <- read_csv('Starvation_Data.csv') %>%
+  
+mutate(Percent_Survival = ((100* Alive)/(Dead + Alive)), 
+       Percent_Bagged = ((100* Bagged)/(Dead + Alive)),
+       condition = (paste(Genotype, Food)))
+
+```
+```{r plots}
+(SurvivalPlot <- df %>%
+  ggplot(aes(x = Time_Off_Food_Hours , color = condition, y = Percent_Survival)) +
+  geom_line() +
+  geom_point(aes(shape = Food, size = 0.5))+
+  scale_color_brewer(palette = "Accent") +
+  scale_fill_brewer(palette = "Accent"))
+```
+```{r plot}
+(BaggingPlot <- df %>%
+  ggplot(aes(x = Time_Off_Food_Hours , color = condition, y = Percent_Bagged)) +
+  geom_line() +
+  geom_point(aes(shape = Food, size = 0.5))+
+  scale_color_brewer(palette = "Accent") +
+  scale_fill_brewer(palette = "Accent"))
+```
+
+

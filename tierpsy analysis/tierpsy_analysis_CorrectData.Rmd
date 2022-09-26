@@ -7,24 +7,180 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggbeeswarm)
+library(kableExtra)
+library(magrittr)
+theme_set(theme_classic())
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r data load, message=FALSE}
+features <- read_csv('tracking_data.csv') %>% group_by(worm_index) %>%
+  
+          mutate(rel_time_sec = (timestamp - min(timestamp))/2)
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
+```{r speed plots}
+#dealing with backwards tracked worms (head = tail)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+
+df <- mutate(features, speed = case_when(worm_index %in% c("80", "141", "194") ~ -speed, TRUE ~ speed))
+
+  
+(speedPlot <- features %>%
+   filter(rel_time_sec <= 50) %>%
+  ggplot(aes(x = rel_time_sec,color =genotypes, fill = as_factor(worm_index), y = speed)) +
+   geom_point() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "speed", y = "speed", x = "time(sec)"))
+
+(N2speedPlot <- df %>%
+   filter(rel_time_sec <= 50, genotypes == "N2", !worm_index %in% c("171", "141")) %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y = speed)) +
+    geom_point () +
+    geom_line() +
+  scale_color_viridis(discrete = TRUE, option = "D", begin = 0, end = 0.15, alpha = 0.6) +
+    scale_fill_viridis(discrete = TRUE, option = "D", begin = 0, end = 0.15, alpha = 0.6) +
+   labs(title = "N2 speed", y = "speed", x = "time(sec)")
+  + ylim(-50, 50))
+
+(cestspeedPlot <- df %>%
+   filter(rel_time_sec <= 50, genotypes == "cest-1.2", !worm_index %in% c("17", "185", "115", "194")) %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y = speed)) +
+    geom_point ()+
+    geom_line() +
+ scale_color_viridis(discrete = TRUE, option = "D", begin = 0.25, end = 0.4, alpha = 0.6) +
+    scale_fill_viridis(discrete = TRUE, option = "D", begin = 0.25, end = 0.4, alpha = 0.6) +
+   labs(title = "cest-1.2 speed", y = "speed", x = "time(sec)")
+   + ylim(-50, 50))
+
+
+```
+```{r reversal speed}
+
+reversals <- subset(df, df$speed <= 0 & df$rel_time_sec <= 25 & !worm_index %in% c("17", "185"))
+
+(N2REVspeedPlot <- reversals %>%
+   filter(genotypes == "N2") %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y = speed)) +
+    geom_point () +
+    geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "N2 speed", y = "speed", x = "time(sec)")
+  + ylim(-50, 50))
+
+(cestREVspeedPlot <- reversals %>%
+   filter(genotypes == "cest-1.2") %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y =  speed)) +
+    geom_point ()+
+    geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "cest-1.2 speed", y = "speed", x = "time(sec)")
+   + ylim(-50, 50))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r, curvature plots, fig.height= 5, fig.width=12}
+
+(curvaturePlot <- features %>%
+   filter(rel_time_sec <= 50) %>%
+  ggplot(aes(x = rel_time_sec,color =genotypes, fill = as_factor(worm_index), y = curvature_midbody)) +
+   geom_point() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "curvature", y = "speed", x = "time(sec)"))
+
+(N2curvaturePlot <- features %>%
+   filter(rel_time_sec <= 50, genotypes == "N2") %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y = curvature_midbody)) +
+    geom_point ()+
+    geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "N2 curvature", y = "curvature", x = "time(sec)"))
+
+(cestcurvaturePlot <- features %>%
+   filter(rel_time_sec <= 50, genotypes == "cest-1.2") %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y = curvature_midbody)) +
+    geom_point ()+
+    geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "cest-1.2 curvature", y = "curvature", x = "time(sec)"))
+```
+```{r reversal curvature}
+
+(curvaturePlot <- reversals %>%
+  ggplot(aes(x = rel_time_sec,color =genotypes, fill = as_factor(worm_index), y = curvature_midbody)) +
+   geom_point() +
+   geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "curvature", y = "curvatue", x = "time(sec)"))
+
+(N2REVcurvaturePlot <- reversals %>%
+   filter(genotypes == "N2") %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y = curvature_midbody)) +
+    geom_point ()+
+    geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "N2 curvature", y = "curvature", x = "time(sec)"))
+
+(cestREVcurvaturePlot <- reversals %>%
+   filter(genotypes == "cest-1.2") %>%
+  ggplot(aes(x = rel_time_sec,color= as_factor(worm_index), y = curvature_midbody)) +
+    geom_point ()+
+    geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "cest-1.2 curvature", y = "curvature", x = "time(sec)"))
+```
+```{r post reversal curvature}
+post_reversals <- subset(df, df$speed >= 0 & df$rel_time_sec >= 25  & df$rel_time_sec <= 50 & !worm_index %in% c("17", "185"))
+
+(curvaturePlot <- post_reversals %>%
+  ggplot(aes(x = rel_time_sec,color =genotypes, fill = as_factor(worm_index), y = curvature_midbody)) +
+   geom_point() +
+   geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "curvature", y = "curvatue", x = "time(sec)"))
+```
+```{r length}
+(lengthplot <- df %>%
+   filter(rel_time_sec <= 50, !worm_index %in% c("17", "185")) %>%
+  ggplot(aes(x = genotypes,color= genotypes, y = length)) +
+    geom_boxplot () +
+   stat_summary(aes(fill= genotypes),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "length", y = "length", x = "genotype"))
+
+(length_timePlot <- features %>%
+   filter(rel_time_sec <= 50, !worm_index %in% c("17", "185")) %>%
+  ggplot(aes(x = rel_time_sec,color =genotypes, fill = as_factor(worm_index), y = length)) +
+   geom_point() +
+    geom_line() +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
+   labs(title = "length", y = "length", x = "time(sec)"))
+
+```
+
+
