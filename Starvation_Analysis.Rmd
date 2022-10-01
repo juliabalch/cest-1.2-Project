@@ -25,6 +25,7 @@ mutate(Percent_Survival = ((100* Alive)/(Dead + Alive)),
 ```
 ```{r plots}
 (SurvivalPlot <- df %>%
+  filter(Date_Started == "9/29/2022") %>%
   ggplot(aes(x = Time_Off_Food_Hours , color = condition, y = Percent_Survival)) +
   geom_line() +
   geom_point(aes(shape = Food, size = 0.5))+
@@ -33,6 +34,7 @@ mutate(Percent_Survival = ((100* Alive)/(Dead + Alive)),
 ```
 ```{r plot}
 (BaggingPlot <- df %>%
+  filter(Date_Started == "9/29/2022") %>%
   ggplot(aes(x = Time_Off_Food_Hours , color = condition, y = Percent_Bagged)) +
   geom_line() +
   geom_point(aes(shape = Food, size = 0.5))+
