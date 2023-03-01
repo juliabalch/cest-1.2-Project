@@ -525,6 +525,36 @@ touch response",
 touch response",
  y = "number of body bends per reversal", x = "genotype")+ 
   facet_grid(date ~ time_off_food))
+
 ```
+
+```{r}
+(bodybend <- AntTouch %>%
+  filter(date == "1/25/2023") %>%
+   ggplot(aes(x = genotype,fill=genotype, y = bends)) +
+  geom_boxplot() +
+  ggbeeswarm::geom_quasirandom(aes(fill = genotype),
+                               width = .1,
+                               alpha = 0.3,
+                               dodge.width = .75) +
+   stat_summary(aes(fill= genotype),
+               geom = "point", 
+               fun = "mean", 
+               width = 0.3, 
+               position = position_dodge(width = .4)) +
+  stat_summary(aes(),
+               geom = "errorbar", 
+               fun.data = "mean_se", 
+               width = 0.1, 
+               position = position_dodge(width = 1.6)) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+   labs(title = "Body bends in anterior       
+touch response",
+ y = "number of body bends per reversal", x = "genotype"))
+```
+
+
+
 
 

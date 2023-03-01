@@ -1,0 +1,65 @@
+Genotype,Time_Off_Food,Bagged,Bagged_Previous,Alive,Percent_Bagged
+N2 OP50   (+Indole),20,0,0,29,0
+N2 OP50 tnaA  (+Indole),20,0,0,30,0
+cest-1.2 OP50   (+Indole),20,0,0,32,0
+cest-1.2 OP50 tnaA (+Indole),20,0,0,35,0
+N2 OP50   (EtOH),20,0,0,33,0
+N2 OP50 tnaA  (EtOH),20,1,0,35,2.777777778
+cest-1.2 OP50  (EtOH),20,0,0,25,0
+cest-1.2 OP50 tnaA (EtOH),20,0,0,33,0
+N2 OP50   (+Indole),23,0,0,26,0
+N2 OP50 tnaA  (+Indole),23,1,0,30,3.225806452
+cest-1.2 OP50   (+Indole),23,0,0,34,0
+cest-1.2 OP50 tnaA (+Indole),23,2,0,32,5.882352941
+N2 OP50   (EtOH),23,0,0,33,0
+N2 OP50 tnaA  (EtOH),23,3,1,31,11.42857143
+cest-1.2 OP50  (EtOH),23,1,0,22,4.347826087
+cest-1.2 OP50 tnaA (EtOH),23,0,0,33,0
+N2 OP50   (+Indole),26,2,0,27,6.896551724
+N2 OP50 tnaA  (+Indole),26,4,1,27,15.625
+cest-1.2 OP50   (+Indole),26,1,0,31,3.125
+cest-1.2 OP50 tnaA (+Indole),26,1,2,29,9.375
+N2 OP50   (EtOH),26,2,0,31,6.060606061
+N2 OP50 tnaA  (EtOH),26,11,4,21,41.66666667
+cest-1.2 OP50  (EtOH),26,2,1,20,13.04347826
+cest-1.2 OP50 tnaA (EtOH),26,4,0,28,12.5
+N2 OP50   (+Indole),29,4,2,20,23.07692308
+N2 OP50 tnaA  (+Indole),29,3,5,21,27.5862069
+cest-1.2 OP50   (+Indole),29,1,1,30,6.25
+cest-1.2 OP50 tnaA (+Indole),29,1,3,30,11.76470588
+N2 OP50   (EtOH),29,4,2,27,18.18181818
+N2 OP50 tnaA  (EtOH),29,10,15,12,67.56756757
+cest-1.2 OP50  (EtOH),29,1,3,19,17.39130435
+cest-1.2 OP50 tnaA (EtOH),29,2,4,25,19.35483871
+N2 OP50   (+Indole),32,1,6,13,35
+N2 OP50 tnaA  (+Indole),32,5,8,13,50
+cest-1.2 OP50   (+Indole),32,1,2,20,13.04347826
+cest-1.2 OP50 tnaA (+Indole),32,4,4,22,26.66666667
+N2 OP50   (EtOH),32,8,6,21,40
+N2 OP50 tnaA  (EtOH),32,7,25,4,88.88888889
+cest-1.2 OP50  (EtOH),32,1,4,13,27.77777778
+cest-1.2 OP50 tnaA (EtOH),32,6,6,18,40
+N2 OP50   (+Indole),35,1,7,16,33.33333333
+N2 OP50 tnaA  (+Indole),35,3,13,8,66.66666667
+cest-1.2 OP50   (+Indole),35,2,3,21,19.23076923
+cest-1.2 OP50 tnaA (+Indole),35,7,8,12,55.55555556
+N2 OP50   (EtOH),35,5,14,10,65.51724138
+N2 OP50 tnaA  (EtOH),35,3,32,2,94.59459459
+cest-1.2 OP50  (EtOH),35,2,5,14,33.33333333
+cest-1.2 OP50 tnaA (EtOH),35,6,12,11,62.06896552
+N2 OP50   (+Indole),47,7,8,11,57.69230769
+N2 OP50 tnaA  (+Indole),47,7,16,2,92
+cest-1.2 OP50   (+Indole),47,7,5,12,50
+cest-1.2 OP50 tnaA (+Indole),47,4,15,9,67.85714286
+N2 OP50   (EtOH),47,11,19,0,100
+N2 OP50 tnaA  (EtOH),47,1,35,0,100
+cest-1.2 OP50  (EtOH),47,5,7,10,54.54545455
+cest-1.2 OP50 tnaA (EtOH),47,2,18,6,76.92307692
+N2 OP50   (+Indole),52,2,15,4,80.95238095
+N2 OP50 tnaA  (+Indole),52,1,23,1,96
+cest-1.2 OP50   (+Indole),52,1,12,8,61.9047619
+cest-1.2 OP50 tnaA (+Indole),52,0,19,10,65.51724138
+N2 OP50   (EtOH),52,,30,,100
+N2 OP50 tnaA  (EtOH),52,,36,,100
+cest-1.2 OP50  (EtOH),52,6,12,4,81.81818182
+cest-1.2 OP50 tnaA (EtOH),52,3,20,2,92

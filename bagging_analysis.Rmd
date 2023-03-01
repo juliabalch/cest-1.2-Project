@@ -1,0 +1,35 @@
+---
+title: "Untitled"
+author: "Julia Balch"
+date: "2022-12-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggbeeswarm)
+library(kableExtra)
+library(magrittr)
+library(viridis)
+theme_set(theme_classic())
+```
+
+``` {r data load, message=FALSE}
+
+df <- read_csv("02-09-2023_Bagging_cest-1.2.csv")
+```
+
+```{r}
+(BaggingPlot <- df %>%
+   filter()  %>%
+  ggplot(aes(x = Time_Off_Food , color = Genotype, y = Percent_Bagged)) +
+  geom_point(size = 3.5)+
+  geom_line(size = 1) +
+  scale_color_viridis(discrete = TRUE, option = "D", alpha = 0.65) +
+    scale_fill_viridis(discrete = TRUE, option = "D", alpha = 0.65) +
+   labs(y = "Percent Bagged", x = "Time Off Food (hours)") +
+   theme(axis.text=element_text(size=15), axis.title =element_text(size=15)))
+```
+

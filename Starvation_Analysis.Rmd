@@ -12,6 +12,7 @@ library(patchwork)
 library(ggbeeswarm)
 library(kableExtra)
 library(magrittr)
+library(viridis)
 theme_set(theme_classic())
 ```
 
@@ -25,21 +26,24 @@ mutate(Percent_Survival = ((100* Alive)/(Dead + Alive)),
 ```
 ```{r plots}
 (SurvivalPlot <- df %>%
-  filter(Date_Started == "9/29/2022") %>%
-  ggplot(aes(x = Time_Off_Food_Hours , color = condition, y = Percent_Survival)) +
+  filter(Food != "BW",Food != "tnaA") %>%
+  ggplot(aes(x = Time_Off_Food_Hours , color = Genotype, y = Percent_Survival)) +
   geom_line() +
-  geom_point(aes(shape = Food, size = 0.5))+
-  scale_color_brewer(palette = "Accent") +
-  scale_fill_brewer(palette = "Accent"))
+ scale_color_viridis(discrete = TRUE, option = "A", alpha = 0.65) +
+    scale_fill_viridis(discrete = TRUE, option = "A", alpha = 0.65))
 ```
+
 ```{r plot}
+
+
 (BaggingPlot <- df %>%
-  filter(Date_Started == "9/29/2022") %>%
+  filter(Genotype != "tdc-1", Food != "BW") %>%
   ggplot(aes(x = Time_Off_Food_Hours , color = condition, y = Percent_Bagged)) +
-  geom_line() +
-  geom_point(aes(shape = Food, size = 0.5))+
-  scale_color_brewer(palette = "Accent") +
-  scale_fill_brewer(palette = "Accent"))
+  geom_point(aes(shape = Food), size = 3.5)+
+  geom_line(size = 1) +
+  scale_color_manual(values = c("#F2D39A","#F2D39A","#C4B399", "#F5E7C0","#bebebe", "#bebebe")) +
+   labs(y = "Percent Bagged", x = "Time Off Food (hours)") +
+   theme(axis.text=element_text(size=15), axis.title =element_text(size=15)))
 ```
 
 
